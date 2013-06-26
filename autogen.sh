@@ -9,14 +9,14 @@ else
 	AUTOMAKE=automake-${AM_VERSION}
 fi
 
-if test -f /opt/local/bin/glibtoolize ; then
+if test -f /usr/local/bin/glibtoolize ; then
 	# darwin
-	LIBTOOLIZE=/opt/local/bin/glibtoolize
+	LIBTOOLIZE=/usr/local/bin/glibtoolize
 else
 	LIBTOOLIZE=libtoolize
 fi
-if test -d /opt/local/share/aclocal ; then
-	ACLOCAL_ARGS="-I /opt/local/share/aclocal"
+if test -d /usr/local/share/aclocal ; then
+	ACLOCAL_ARGS="-I /usr/local/share/aclocal"
 fi
 
 echo "Generating build scripts for G729 codec..."
